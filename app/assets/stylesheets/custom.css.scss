@@ -1,0 +1,16 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+background-color: #F5F5F1;
+color: #66FFFF;
+}
+.navbar-default{
+background-color:#ffccff;
+}
+.navbar-default .navbar-brand{
+background-color:#ffccff;
+}
+.col-md-3:nth-child(4n+1){
+	clear:left
+}
