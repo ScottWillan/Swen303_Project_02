@@ -7903,3 +7903,436 @@ Processing by ListingsController#index as HTML
   [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
   Rendered layouts/_header.html.erb (2.0ms)
 Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/browse" for ::1 at 2016-05-15 21:48:31 +1200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#browse as HTML
+  Rendered pages/browse.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered layouts/_header.html.erb (58.4ms)
+Completed 200 OK in 484ms (Views: 463.4ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-05-15 21:48:34 +1200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"i2OPVr7DmizU4nFNOZQiHCopATdvrRR0UUBXpyoAZubLLCPuQ3EfO1/sWXJ7et9g3wZhaCf5CY3pS2Yxm30jsA=="}
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 36ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2016-05-15 21:48:34 +1200
+
+SyntaxError (/Users/donald/myShop/app/controllers/listings_controller.rb:3: syntax error, unexpected ',', expecting =>
+...uthenticate_user!, only: {:new, :create, :edit, :update, :de...
+...                               ^):
+  app/controllers/listings_controller.rb:3: syntax error, unexpected ',', expecting =>
+
+
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.5ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.4ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (129.6ms)
+
+
+Started GET "/" for ::1 at 2016-05-15 21:49:05 +1200
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.4ms)[0m  SELECT "listings".* FROM "listings"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered listings/index.html.erb within layouts/application (44.2ms)
+  Rendered layouts/_header.html.erb (5.8ms)
+Completed 200 OK in 109ms (Views: 97.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/custom.self-873e6cd0847764143690e3edb444561057dd8e2ba4d391279e8c861cf10b46e4.css?body=1" for ::1 at 2016-05-15 21:49:06 +1200
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-15 21:49:06 +1200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-15 21:49:06 +1200
+
+
+Started GET "/assets/scaffolds.self-a0d58349dce915c6a67d4c6967c0abfbf52d5b4b62046ca8f8891a0f926b4fb0.css?body=1" for ::1 at 2016-05-15 21:49:06 +1200
+
+
+Started GET "/assets/listings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-15 21:49:06 +1200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-15 21:49:06 +1200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-15 21:49:06 +1200
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-05-15 21:49:06 +1200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-15 21:49:06 +1200
+
+
+Started GET "/assets/listings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-15 21:49:06 +1200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-15 21:49:06 +1200
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2016-05-15 21:49:06 +1200
+
+
+Started GET "/assets/default-80430b91715dfad012ea3db4d696b628aacbb26797150451bcb319a565aea3fe.png" for ::1 at 2016-05-15 21:49:06 +1200
+
+
+Started GET "/listings/11/edit" for ::1 at 2016-05-15 21:49:16 +1200
+Processing by ListingsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mListing Load (0.3ms)[0m  SELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1  [["id", 11]]
+Completed 401 Unauthorized in 3ms
+
+
+Started GET "/users/sign_in" for ::1 at 2016-05-15 21:49:16 +1200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (33.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 78ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-15 21:52:18 +1200
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.5ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered listings/index.html.erb within layouts/application (25.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 79ms (Views: 62.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-05-15 21:52:22 +1200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (21.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 73ms (Views: 71.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/browse" for ::1 at 2016-05-15 22:36:24 +1200
+Processing by PagesController#browse as HTML
+  Rendered pages/browse.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 87ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-15 22:36:25 +1200
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered listings/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/listings/11" for ::1 at 2016-05-15 22:36:29 +1200
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered listings/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-05-15 22:36:30 +1200
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.2ms)[0m  SELECT "listings".* FROM "listings"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered listings/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/11" for ::1 at 2016-05-15 22:49:09 +1200
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered listings/show.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-05-15 22:49:11 +1200
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.1ms)[0m  SELECT "listings".* FROM "listings"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered listings/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/11" for ::1 at 2016-05-15 22:49:11 +1200
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered listings/show.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 41ms (Views: 38.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/listings" for ::1 at 2016-05-15 22:49:15 +1200
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.2ms)[0m  SELECT "listings".* FROM "listings"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered listings/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/11" for ::1 at 2016-05-15 22:49:17 +1200
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered listings/show.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/listings" for ::1 at 2016-05-15 22:49:19 +1200
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.1ms)[0m  SELECT "listings".* FROM "listings"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered listings/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 51ms (Views: 49.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/new" for ::1 at 2016-05-15 22:49:21 +1200
+Processing by ListingsController#new as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for ::1 at 2016-05-15 22:49:21 +1200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 57ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-15 22:49:24 +1200
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.4ms)[0m  SELECT "listings".* FROM "listings"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered listings/index.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 73ms (Views: 71.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-05-15 22:52:08 +1200
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.1ms)[0m  SELECT "listings".* FROM "listings"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered listings/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-05-15 22:52:10 +1200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-05-15 22:52:17 +1200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M8Z7kJ8+JClYbneY2rZgw2aOzWML9zNp3hE5fBOpkoDnA1by3UZ55Ir2VvWdq3oRm0HHqpOmscaSoXmgwlkQwA==", "user"=>{"email"=>"ta@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ta@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2016-05-15 10:52:17.160147"], ["sign_in_count", 2], ["updated_at", "2016-05-15 10:52:17.162064"], ["id", 4]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/listings/new
+Completed 302 Found in 135ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/listings/new" for ::1 at 2016-05-15 22:52:17 +1200
+Processing by ListingsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered listings/_form.html.erb (5.7ms)
+  Rendered listings/new.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 44ms (Views: 41.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-05-15 22:52:21 +1200
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered listings/index.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/listings/new" for ::1 at 2016-05-15 22:52:23 +1200
+Processing by ListingsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered listings/_form.html.erb (5.4ms)
+  Rendered listings/new.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 58ms (Views: 55.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/new" for ::1 at 2016-05-15 22:53:08 +1200
+Processing by ListingsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered listings/_form.html.erb (3.9ms)
+  Rendered listings/new.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 61ms (Views: 58.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/listings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-15 22:53:08 +1200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-15 22:53:08 +1200
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-15 22:53:08 +1200
+
+
+Started GET "/assets/scaffolds.self-a0d58349dce915c6a67d4c6967c0abfbf52d5b4b62046ca8f8891a0f926b4fb0.css?body=1" for ::1 at 2016-05-15 22:53:08 +1200
+
+
+Started GET "/assets/custom.self-873e6cd0847764143690e3edb444561057dd8e2ba4d391279e8c861cf10b46e4.css?body=1" for ::1 at 2016-05-15 22:53:08 +1200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-15 22:53:08 +1200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-15 22:53:08 +1200
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-05-15 22:53:08 +1200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-15 22:53:08 +1200
+
+
+Started GET "/assets/listings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-15 22:53:08 +1200
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2016-05-15 22:53:08 +1200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-15 22:53:08 +1200
+
+
+Started GET "/pages/browse" for ::1 at 2016-05-15 22:53:13 +1200
+Processing by PagesController#browse as HTML
+  Rendered pages/browse.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-05-15 22:53:14 +1200
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered listings/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 64ms (Views: 62.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-05-15 22:53:29 +1200
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.2ms)[0m  SELECT "listings".* FROM "listings"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered listings/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custom.self-873e6cd0847764143690e3edb444561057dd8e2ba4d391279e8c861cf10b46e4.css?body=1" for ::1 at 2016-05-15 22:53:29 +1200
+
+
+Started GET "/assets/listings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-15 22:53:29 +1200
+
+
+Started GET "/assets/scaffolds.self-a0d58349dce915c6a67d4c6967c0abfbf52d5b4b62046ca8f8891a0f926b4fb0.css?body=1" for ::1 at 2016-05-15 22:53:29 +1200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-15 22:53:29 +1200
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-15 22:53:29 +1200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-15 22:53:29 +1200
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-05-15 22:53:29 +1200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-15 22:53:29 +1200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-15 22:53:29 +1200
+
+
+Started GET "/assets/listings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-15 22:53:29 +1200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-15 22:53:29 +1200
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2016-05-15 22:53:29 +1200
+
+
+Started GET "/assets/default-80430b91715dfad012ea3db4d696b628aacbb26797150451bcb319a565aea3fe.png" for ::1 at 2016-05-15 22:53:29 +1200
+
+
+Started GET "/" for ::1 at 2016-05-15 23:01:01 +1200
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered listings/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 68ms (Views: 66.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/listings/11" for ::1 at 2016-05-15 23:01:04 +1200
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered listings/show.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-05-15 23:01:06 +1200
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered listings/index.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.5ms)
