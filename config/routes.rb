@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'pages/new_arrivals'
+
+  get 'pages/browse'
+
   devise_for :users
   get 'pages/about'
 

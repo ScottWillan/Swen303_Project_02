@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
-  def about
+  def new_arrivals
   end
 
-  def contact
+  def browse
   end
 end
