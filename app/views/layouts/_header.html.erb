@@ -6,7 +6,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-       <a style="background-image: url(&quot;http://www.howlongagogo.com/assets/GOGO.png&quot;); width: 324px; height: 50px;" class="pull-left" href="/"></a>
+       <a style="background-image: url(https://www.google.co.nz/images/nav_logo242_hr.png); width: 324px; height: 50px;" class="pull-left" href="/"></a>
        <li><%= link_to "Browse",  pages_browse_path%></li>
        <li><%= link_to "New Arrivals", pages_new_arrivals_path%></li>
      </ul>
@@ -21,13 +21,15 @@
       <li><%= link_to "Signup", new_user_registration_path %></li>
       <li><%= link_to "Signin", new_user_session_path%></li>
       <%else%>
+
       <li><%= link_to 'New Listing', new_listing_path %></li>
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.first %> <%= current_user.last %>  <span class="caret"></span></a>
         <ul class="dropdown-menu">
-
+          <li><%= link_to 'My Listings', sellers_path %></li>
+          <li><%= link_to 'My Purchases', purchases_path %></li>
+          <li><%= link_to 'My Sales', sales_path %></li>
           <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
-
           <li><%= link_to "Signout", destroy_user_session_path, method: :delete %></li>
 
           <%end%>

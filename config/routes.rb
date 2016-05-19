@@ -1,15 +1,21 @@
 Rails.application.routes.draw do
-  get 'pages/new_arrivals'
+  
 
+  get 'pages/new_arrivals'
+  get 'sellers' => "listings#seller"
   get 'pages/browse'
 
   devise_for :users
   get 'pages/about'
 
   get 'pages/contact'
+  get 'sales' => "orders#sales"
+  get 'purchases' => "orders#purchases"
 
   
-  resources :listings
+  resources :listings do
+    resources :orders
+  end
   root 'listings#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
