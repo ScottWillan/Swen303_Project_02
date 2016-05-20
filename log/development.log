@@ -29535,3 +29535,63 @@ Processing by ListingsController#new as HTML
   Rendered layouts/_header.html.erb (3.0ms)
   Rendered layouts/_footer.html.erb (0.0ms)
 Completed 200 OK in 422ms (Views: 418.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/listings/new" for ::1 at 2016-05-20 21:05:24 +1200
+Processing by ListingsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 10]]
+  Rendered listings/_form.html.erb (3.2ms)
+  Rendered listings/new.html.erb within layouts/application (20.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 259ms (Views: 256.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-05-20 21:05:28 +1200
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (1.0ms)[0m  SELECT "listings".* FROM "listings"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered listings/index.html.erb within layouts/application (20.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 256ms (Views: 253.4ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-05-20 21:05:44 +1200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jBk8UlKiJXGXhEVErqps/3owhSet6dgbKVQ5P6UDKs3EVKmhzQdxTA4fQrhuo+WnwleoREDw3jbr74gODnpq2g=="}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-20 21:05:44 +1200
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.5ms)[0m  [1mSELECT "listings".* FROM "listings"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered listings/index.html.erb within layouts/application (18.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 284ms (Views: 280.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-05-20 21:05:46 +1200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 262ms (Views: 261.3ms | ActiveRecord: 0.0ms)
