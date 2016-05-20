@@ -8,4 +8,8 @@ class Listing < ActiveRecord::Base
   has_many :orders
   has_many :sales, class_name: "Order", foreign_key: "seller_id"
   has_many :purchases, class_name: "Order", foreign_key: "buyer_id"
+  def self.search(search)
+  where("name LIKE ?", "%#{search}%") 
+  where("description LIKE ?", "%#{search}%")
+end
 end
