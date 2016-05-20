@@ -10,26 +10,17 @@
        <li class="navbarfont"><%= link_to "Browse",  pages_browse_path%></li>
        <li class="navbarfont"><%= link_to "New Arrivals", pages_new_arrivals_path%></li>
      </ul>
-<<<<<<< HEAD
+
      <form class="navbar-form navbar-left" role="search">
       <div class="input-group">
         <%= form_tag(listings_path, :method => "get", id: "search-form") do %>
-        <%= text_field_tag :search, params[:search], placeholder: "Search Listings", class: 'form-control' %>
+        <%= text_field_tag :search, params[:search], placeholder: "Search", class: 'form-control-search' %>
         <span class="input-group-btn">
-          <%= submit_tag "Search", class: 'btn btn-default' %>
         </span>
         <% end %>
       </div>
     </form>
-=======
 
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control-search" placeholder="Search">
-        </div>
-      </form>
-
->>>>>>> develop
     <ul class="nav navbar-nav navbar-right">
       <% if !user_signed_in? %>
       <!--<li><%= link_to "Signup", new_user_registration_path %></li>-->
