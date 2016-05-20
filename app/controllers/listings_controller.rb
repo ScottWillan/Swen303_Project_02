@@ -5,7 +5,14 @@ class ListingsController < ApplicationController
   # GET /listings
   # GET /listings.json
   def index
-    @listings = Listing.all.order("created_at DESC")
+    #@listings = Listing.all.order("created_at DESC")
+
+    @listings = Listing.all
+    if params[:search]
+      @listings = Listing.search(params[:search]).order("created_at DESC")
+    else
+      @listings = Listing.all.order('created_at DESC')
+    end
   end
   def seller
     @listings = Listing.where(user: current_user).order("created_at DESC")
@@ -77,8 +84,8 @@ class ListingsController < ApplicationController
     end
 
     def check_user
-        if current_user.id != @listing.user_id
-          redirect_to root_url, alert: "Sorry this isn't your listing"
-        end
+      if current_user.id != @listing.user_id
+        redirect_to root_url, alert: "Sorry this isn't your listing"
       end
-end
+    end
+  end
