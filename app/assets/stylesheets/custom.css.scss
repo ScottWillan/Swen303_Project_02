@@ -107,7 +107,7 @@ img {
 }
 
 .padBottom {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .bordered {
@@ -121,7 +121,16 @@ img {
 }
 
 h1{
-  color: #575757;
+  color: white;
+}
+
+.contact h1{
+}
+
+.Georgia {
+  font-family: Georgia, serif;
+  font-size: 35px;
+  color: #603e00;
 }
 
 .contact-img {
@@ -138,4 +147,15 @@ h1{
   background-color: #105cb2;
   height: 100%;
   padding: 10px;
+}
+
+.make-banner {
+  margin-top: 0;
+  font-size: large;
+  font-family: Georgia, serif;
+  padding: 15px;
+  padding-top: 0;
+  color: white !important;
+  background-color: #105cb2;
+  width: 100%;
 }
