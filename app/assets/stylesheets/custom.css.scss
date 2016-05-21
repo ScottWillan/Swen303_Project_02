@@ -195,3 +195,23 @@ h1{
   color: green;
   background-color: transparent !important;
 }
+
+.signupBox {
+  padding: 30px;
+  padding-top: 20px;
+  margin-top: 70px;
+  height: 650px;
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 106, 255, 0.6);
+  background: linear-gradient(to top, rgba(84, 0, 255, 0.6), rgba(0, 106, 255, 0.3));
+  border-radius: 5px;
+}
+
+.signupBtn {
+  color: white !important;
+}
+.signupBtn:hover {
+  color: white !important;
+  background-color: white !important;
+}
