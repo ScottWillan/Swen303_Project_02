@@ -159,3 +159,39 @@ h1{
   background-color: #105cb2;
   width: 100%;
 }
+
+.loginBackground {
+  background-image: url("https://static.pexels.com/photos/2855/landscape-mountains-nature-lake.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.loginBox {
+  padding: 30px;
+  padding-top: 60px;
+  margin-top: 100px;
+  height: 500px;
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 106, 255, 0.6);
+  background: linear-gradient(to top, rgba(84, 0, 255, 0.6), rgba(0, 106, 255, 0.3));
+  border-radius: 5px;
+}
+
+.loginDetails {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.loginTosignin {
+  color: white !important;
+  background-color: #105cb2;
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 5px;
+}
+.loginTosignin:hover {
+  color: green;
+  background-color: transparent !important;
+}
