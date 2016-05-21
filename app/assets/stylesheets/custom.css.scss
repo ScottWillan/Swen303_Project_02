@@ -2,7 +2,7 @@
 @import "bootstrap";
 
 body {
-font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .navbar-default{
   background-color: rgba(255, 255, 255, 1)
@@ -104,4 +104,38 @@ img {
 
 .newSignUp {
   color: #105cb2;
+}
+
+.padBottom {
+  padding-bottom: 50px;
+}
+
+.bordered {
+  border: solid;
+  border-radius: 5px;
+  height: inherit;
+  padding: 20px;
+  padding-top: 10px;
+  border-color: #adadad;
+  color: #adadad;
+}
+
+h1{
+  color: #575757;
+}
+
+.contact-img {
+  height: inherit;
+  width: auto;
+}
+
+.footerLink {
+  color: #FFFFFF !important;
+  padding: 10px;
+}
+.footerLink:hover {
+  color: #FFFFFF !important;
+  background-color: #105cb2;
+  height: 100%;
+  padding: 10px;
 }
