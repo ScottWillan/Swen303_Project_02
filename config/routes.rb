@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   get 'pages/new_arrivals'
   get 'sellers' => "listings#seller"
   get 'pages/browse'
-
+match '/contacts',     to: 'contacts#new',             via: 'get'
+resources "contacts", only: [:new, :create]
   devise_for :users
   get 'pages/about'
 

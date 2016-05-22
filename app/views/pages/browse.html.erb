@@ -1,2 +1,28 @@
-<h1>Pages#browse</h1>
-<p>Find me in app/views/pages/browse.html.erb</p>
+<div class="center">
+	<div class="row">
+		<% @listings.each do |listing| %>
+		<div class="col-md-3">
+			<div class="thumbnail">
+				<div class="imagebounds">
+					<%= link_to image_tag(listing.image.url), listing, class: "listing-image" %>
+				</div>
+				<div class="caption">
+					<h3><%= listing.name %></h3>
+					<p><%= number_to_currency(listing.price) %></p>
+					<%if(current_user != listing.user)%>
+					<p><%= "Sold by #{listing.user.name}" %></p>
+					<%end%>
+					<%if (user_signed_in?) && (current_user == listing.user)%>
+					<%= link_to 'Edit', edit_listing_path(listing), class:"btn btn-link" %>
+					<%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-link" %>
+					<% end %>
+				</div>
+			</div>
+		</div>
+		<% end %>
+	</div>
+</div>
+
+<br>
+
+
