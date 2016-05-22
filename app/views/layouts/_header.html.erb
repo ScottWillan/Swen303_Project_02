@@ -23,8 +23,8 @@
 
     <ul class="nav navbar-nav navbar-right">
       <% if !user_signed_in? %>
-      <!--<li><%= link_to "Signup", new_user_registration_path %></li>-->
-      <li><%= link_to "Login", new_user_session_path, class: "custom-button"%></li>
+      <li><%= link_to "Signup", new_user_registration_path, class: "custom-button" %></li>
+      <li><%= link_to "Login", new_user_session_path, class: "custom-button-2"%></li>
       <%else%>
 
       <li class="dropdown navbarfont custom-button">
