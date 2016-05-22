@@ -10,6 +10,7 @@
     <th class="center">Seller</th>
     <th class="center">Date Purchase</th>
     <th class="center">Bank Account To Pay</th>
+    <th class="center">Cellphone number</th>
   </tr>
 
   <% @orders.each do |order| %>
@@ -20,6 +21,7 @@
       <td class="center"><%= order.seller.name %></td>
       <td class="center"><%= order.created_at.strftime("%B %-d, %Y") %></td>
       <td class="center"><%= order.listing.bank_account %></td>
+      <td class="center"><%= order.seller.number %></td>
     </tr>
   <% end %>
 </table>
