@@ -9,6 +9,11 @@
     <th class="center">Price</th>
     <th class="center">Seller</th>
     <th class="center">Date Purchase</th>
+    <th class="center">Bank Account</th>
+    <th class="center">Cellphone</th>
+    <th class="center">Email</th>
+
+    <
   </tr>
 
   <% @orders.each do |order| %>
@@ -18,6 +23,9 @@
       <td class="center"><%= number_to_currency(order.listing.price) %></td>
       <td class="center"><%= order.seller.name %></td>
       <td class="center"><%= order.created_at.strftime("%B %-d, %Y") %></td>
+      <td class="center"><%= order.listing.bank_account %></td>
+      <td class="center"><%= order.seller.number %></td>
+      <td class="center"><%= order.seller.email %></td>
     </tr>
   <% end %>
 </table>
