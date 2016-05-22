@@ -83,13 +83,45 @@ img {
 }
 
 .custom-button {
-  color: #603e00 !important;
+  color: #ffffff !important;
   font-size: large;
-  background-color: #fbfbfb;
+  background-color: rgba(0, 0, 144, 0.28);
   margin-right: 15px;
+  margin-left: -15px;
   padding-left: 15px !important;
   padding-right: 15px !important;
 }
+
+.custom-button-2 {
+  color: #ffffff !important;
+  font-size: large;
+  background-color: rgba(125, 0, 160, 0.21);
+  margin-right: 15px;
+  margin-left: -15px;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.custom-button:hover {
+  color: #ffffff !important;
+  font-size: large;
+  background-color: rgba(0, 0, 144, 0.64) !important;
+  margin-right: 15px;
+  margin-left: -15px;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.custom-button-2:hover {
+  color: #ffffff !important;
+  font-size: large;
+  background-color: rgba(125, 0, 160, 0.56) !important;
+  margin-right: 15px;
+  margin-left: -15px;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
 
 .footercontainer {
   height: 20px;
@@ -159,6 +191,95 @@ h1{
   background-color: #105cb2;
   width: 100%;
 }
+
+
+.loginBackground {
+  background-image: url("https://static.pexels.com/photos/2855/landscape-mountains-nature-lake.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.loginBox {
+  padding: 30px;
+  padding-top: 60px;
+  margin-top: 100px;
+  height: 500px;
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 106, 255, 0.6);
+  background: linear-gradient(to top, rgba(84, 0, 255, 0.6), rgba(0, 106, 255, 0.3));
+  border-radius: 5px;
+}
+
+.loginDetails {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.loginTosignin {
+  color: white !important;
+  background-color: #105cb2;
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 5px;
+}
+.loginTosignin:hover {
+  color: green;
+  background-color: transparent !important;
+}
+
+.signupBox {
+  padding: 30px;
+  padding-top: 20px;
+  margin-top: 70px;
+  height: 650px;
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 106, 255, 0.6);
+  background: linear-gradient(to top, rgba(0, 4, 24, 0.6), rgba(41, 0, 120, 0.42));
+  border-radius: 5px;
+}
+
+.editBackground{
+  background-image: url("http://www.planwallpaper.com/static/images/ZhGEqAP.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mainBackground{
+  background: rgb(249, 246, 255);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.editBox {
+  padding: 30px;
+  padding-top: 20px;
+  margin-top: 70px;
+  height: 550px;
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 106, 255, 0.6);
+  background: linear-gradient(to top, rgba(0, 4, 24, 0.6), rgba(28, 177, 178, 0.6));
+  border-radius: 5px;
+}
+
+.signupBtn {
+  color: white !important;
+}
+.signupBtn:hover {
+  color: white !important;
+  background-color: white !important;
+}
+
+.dropShadow {
+  -webkit-box-shadow: 0 1px 10px rgba(0,0,0,.1);
+  -moz-box-shadow: 0 1px 10px rgba(0,0,0,.1);
+  box-shadow: 0 1px 10px rgba(0,0,0,.1);
+}
+
 .hidden { display: none; }
 .alert-error {
 background-color: #f2dede;
@@ -187,3 +308,4 @@ border-color: #d6e9c6;
 color: #468847;
 text-align: left;
 }
+

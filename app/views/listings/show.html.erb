@@ -10,7 +10,9 @@
     <p><%= @listing.description %></p>
     <br>
     <div class="center">
+      <%if !(current_user == @listing.user)%>
       <%= link_to "Buy It Now", new_listing_order_path(@listing), class: "btn btn-primary"%>
+      <% end %>
     </div>
   </div>
 </div>
