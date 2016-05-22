@@ -42339,3 +42339,59 @@ Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b
 
 
 Started GET "/assets/default-80430b91715dfad012ea3db4d696b628aacbb26797150451bcb319a565aea3fe.png" for ::1 at 2016-05-22 13:30:26 +1200
+
+
+Started GET "/" for ::1 at 2016-05-22 14:49:28 +1200
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (1.0ms)[0m  [1mSELECT "listings".* FROM "listings"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered listings/index.html.erb within layouts/application (30.6ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3781ms (Views: 3770.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-22 14:49:32 +1200
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.0ms)[0m  SELECT "listings".* FROM "listings"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered listings/index.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 176ms (Views: 174.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/custom.self-beb4465610b36e4b6654e3c80fa068e333f057ae418839ea53234038aeb359d5.css?body=1" for ::1 at 2016-05-22 14:49:33 +1200
+
+
+Started GET "/pages/contact" for ::1 at 2016-05-22 14:49:37 +1200
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 185ms (Views: 184.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-22 14:49:44 +1200
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.0ms)[0m  [1mSELECT "listings".* FROM "listings"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered listings/index.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 201ms (Views: 200.0ms | ActiveRecord: 0.5ms)
