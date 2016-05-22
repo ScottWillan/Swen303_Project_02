@@ -44153,3 +44153,67 @@ Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde45
 
 
 Started GET "/assets/default-80430b91715dfad012ea3db4d696b628aacbb26797150451bcb319a565aea3fe.png" for ::1 at 2016-05-22 22:04:00 +1200
+
+
+Started GET "/purchases" for ::1 at 2016-05-22 22:07:24 +1200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OrdersController#purchases as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."buyer_id" = 2  ORDER BY created_at DESC[0m
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1  [["id", 19]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered orders/purchases.html.erb within layouts/application (479.0ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 700ms (Views: 619.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/custom.self-791de9fd09514b4eaf3a8e1dccb54d3d75835873d71112e4f7b99f4122f2b6f0.css?body=1" for ::1 at 2016-05-22 22:07:25 +1200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-22 22:07:25 +1200
+
+
+Started GET "/assets/scaffolds.self-a0d58349dce915c6a67d4c6967c0abfbf52d5b4b62046ca8f8891a0f926b4fb0.css?body=1" for ::1 at 2016-05-22 22:07:25 +1200
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-22 22:07:25 +1200
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-22 22:07:25 +1200
+
+
+Started GET "/assets/listings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-22 22:07:25 +1200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-22 22:07:25 +1200
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-05-22 22:07:25 +1200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-22 22:07:25 +1200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-22 22:07:25 +1200
+
+
+Started GET "/assets/listings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-22 22:07:25 +1200
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-22 22:07:25 +1200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-22 22:07:25 +1200
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2016-05-22 22:07:25 +1200
+
+
+Started GET "/assets/default-80430b91715dfad012ea3db4d696b628aacbb26797150451bcb319a565aea3fe.png" for ::1 at 2016-05-22 22:07:25 +1200
