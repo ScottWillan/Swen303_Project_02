@@ -68063,3 +68063,379 @@ Processing by ListingsController#index as HTML
   Rendered layouts/_header.html.erb (1.1ms)
   Rendered layouts/_footer.html.erb (0.0ms)
 Completed 200 OK in 97ms (Views: 95.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contacts" for ::1 at 2016-05-23 23:45:46 +1200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (82.2ms)
+  Rendered layouts/_header.html.erb (20.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 774ms (Views: 741.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-05-23 23:45:59 +1200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oUFchWgwqJuKKn2b+3lppRj5qan7AmtbPlBfFZnH5+BbEh9vUtiLQWtzD4wPxsgAZ96GPZCLZ8tEHuZLWfEoCQ==", "commit"=>"Send message"}
+  Rendered contacts/new.html.erb within layouts/application (40.2ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 151ms (Views: 147.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-23 23:51:32 +1200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.7ms)[0m  SELECT "listings".* FROM "listings"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered listings/index.html.erb within layouts/application (114.5ms)
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 779ms (Views: 740.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/contacts" for ::1 at 2016-05-23 23:51:36 +1200
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (92.9ms)
+  Rendered layouts/_header.html.erb (9.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 188ms (Views: 150.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-05-23 23:51:46 +1200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3sDaj2ri1mK19IqonLbRux49eVqADZwJWrZnlu/YbuUkk5llUAr1uFSt+L9oCXAeYRpWzuuEkJkg+N7IL+6hDA==", "commit"=>"Send message"}
+  Rendered contacts/new.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 86ms (Views: 83.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/browse" for ::1 at 2016-05-23 23:57:02 +1200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#browse as HTML
+  [1m[35mListing Load (0.6ms)[0m  SELECT "listings".* FROM "listings"  ORDER BY name DESC
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pages/browse.html.erb within layouts/application (115.0ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 767ms (Views: 725.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/contacts" for ::1 at 2016-05-23 23:57:05 +1200
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (113.7ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 185ms (Views: 169.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-05-23 23:57:12 +1200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Oz8OXC5NG2ryO9tbsbp5bUVX9wr/LzJcCRD9JEJmrMzBbE22FKU4sBNiqUxFBdjIOnDYnpSmPsxzXkR6glBjJQ==", "contact"=>{"name"=>"Donald Tang", "email"=>"tangyfruits@gmail.com", "message"=>"pls work", "nickname"=>""}, "commit"=>"Send message"}
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/mail_form-1.5.1/lib/mail_form/views/mail_form/contact.erb (2.0ms)
+
+MailForm::Notifier#contact: processed outbound mail in 259.1ms
+
+Sent mail to tradechat2016@gmail.com (5290.2ms)
+Date: Mon, 23 May 2016 23:57:13 +1200
+From: Donald Tang <tangyfruits@gmail.com>
+To: tradechat2016@gmail.com
+Message-ID: <5742f019364a6_13903ff35a2d1454377c1@Donalds-MacBook.local.mail>
+Subject: My Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">My Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Donald Tang</p>
+
+  <p><b>Email:</b>
+  tangyfruits@gmail.com</p>
+
+  <p><b>Message:</b>
+  pls work</p>
+
+
+  Rendered contacts/create.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5611ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-24 00:02:33 +1200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.7ms)[0m  SELECT "listings".* FROM "listings"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered listings/index.html.erb within layouts/application (89.8ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 831ms (Views: 798.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/custom.self-40eb3eaddbf9518f5444a66021781be49c0798c51bdd9481bc0f47322a55457b.css?body=1" for ::1 at 2016-05-24 00:02:34 +1200
+
+
+Started GET "/assets/listings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-24 00:02:34 +1200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-24 00:02:34 +1200
+
+
+Started GET "/assets/scaffolds.self-a0d58349dce915c6a67d4c6967c0abfbf52d5b4b62046ca8f8891a0f926b4fb0.css?body=1" for ::1 at 2016-05-24 00:02:34 +1200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-24 00:02:34 +1200
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-24 00:02:34 +1200
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-05-24 00:02:34 +1200
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-24 00:02:34 +1200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-24 00:02:34 +1200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-24 00:02:34 +1200
+
+
+Started GET "/assets/listings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-24 00:02:34 +1200
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-24 00:02:34 +1200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-24 00:02:34 +1200
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2016-05-24 00:02:34 +1200
+
+
+Started GET "/contacts" for ::1 at 2016-05-24 00:02:38 +1200
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (82.7ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 144ms (Views: 135.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-05-24 00:02:47 +1200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yP/O6uEIqmkVFtxKOFaT3CbZsFgdY0CL3vblVITTVoEyrI0A2+CJs/RPrl3M6TJ5Wf6fzHbqTBukuFwKROWZaA==", "commit"=>"Send message"}
+  Rendered contacts/new.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 84ms (Views: 82.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/browse" for ::1 at 2016-05-24 00:07:23 +1200
+Processing by PagesController#browse as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"  ORDER BY name DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pages/browse.html.erb within layouts/application (10.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 70ms (Views: 68.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/contacts" for ::1 at 2016-05-24 00:07:25 +1200
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (50.2ms)
+Completed 500 Internal Server Error in 55ms
+
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x007fd5665b4210>:0x007fd5673be680>):
+     8: 
+     9:       <h2>Log in</h2>
+    10: 
+    11:       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    12:                 <div class="form-group loginDetails">
+    13:             <%= f.label :name %><br/>
+    14:             <%= f.field :name, autofocus: true, class: "form-control", require: true%>
+  app/views/contacts/new.html.erb:11:in `_app_views_contacts_new_html_erb___1318276827227322096_70277268367680'
+
+
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.4ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.0ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (168.6ms)
+
+
+Started GET "/contacts" for ::1 at 2016-05-24 00:07:25 +1200
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (57.9ms)
+Completed 500 Internal Server Error in 63ms
+
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x007fd5665b4210>:0x007fd5666cf488>):
+     8: 
+     9:       <h2>Log in</h2>
+    10: 
+    11:       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    12:                 <div class="form-group loginDetails">
+    13:             <%= f.label :name %><br/>
+    14:             <%= f.field :name, autofocus: true, class: "form-control", require: true%>
+  app/views/contacts/new.html.erb:11:in `_app_views_contacts_new_html_erb___1318276827227322096_70277261586680'
+
+
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.9ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.9ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.2ms)
+
+
+Started GET "/contacts" for ::1 at 2016-05-24 00:07:51 +1200
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (21.7ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined method `field' for #<SimpleForm::FormBuilder:0x007fd563898060>):
+    11:   <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+    12:                 <div class="form-group loginDetails">
+    13:             <%= f.label :name %><br/>
+    14:             <%= f.field :name, autofocus: true, class: "form-control", require: true%>
+    15:           </div>
+    16:           <div class="form-group loginDetails">
+    17:             <%= f.label :email %><br/>
+  app/views/contacts/new.html.erb:14:in `block in _app_views_contacts_new_html_erb___1318276827227322096_70277237933220'
+  app/views/contacts/new.html.erb:11:in `_app_views_contacts_new_html_erb___1318276827227322096_70277237933220'
+
+
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (87.2ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.5ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (155.5ms)
+
+
+Started GET "/contacts" for ::1 at 2016-05-24 00:08:05 +1200
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 63ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-24 00:08:06 +1200
+
+
+Started GET "/assets/scaffolds.self-a0d58349dce915c6a67d4c6967c0abfbf52d5b4b62046ca8f8891a0f926b4fb0.css?body=1" for ::1 at 2016-05-24 00:08:06 +1200
+
+
+Started GET "/assets/listings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-24 00:08:06 +1200
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-24 00:08:06 +1200
+
+
+Started GET "/assets/custom.self-40eb3eaddbf9518f5444a66021781be49c0798c51bdd9481bc0f47322a55457b.css?body=1" for ::1 at 2016-05-24 00:08:06 +1200
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-24 00:08:06 +1200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-24 00:08:06 +1200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-24 00:08:06 +1200
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-05-24 00:08:06 +1200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-24 00:08:06 +1200
+
+
+Started GET "/assets/listings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-24 00:08:06 +1200
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-24 00:08:06 +1200
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2016-05-24 00:08:06 +1200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-24 00:08:06 +1200
+
+
+Started POST "/contacts" for ::1 at 2016-05-24 00:08:15 +1200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5QWXAgDW+d6f8YK3rgVBQcXXhslhHyQmciD3cVEr698fVtToOj7aBH6o8KBauuDkuvCpXQqWKLYIbk4vkR0kNg==", "contact"=>{"name"=>"Donald Tang", "email"=>"tangyfruits@gmail.com", "message"=>"have i fixd it fam"}, "commit"=>"Send message"}
+  Rendered /Users/donald/.rvm/gems/ruby-2.3.0/gems/mail_form-1.5.1/lib/mail_form/views/mail_form/contact.erb (2.9ms)
+
+MailForm::Notifier#contact: processed outbound mail in 347.6ms
+
+Sent mail to tradechat2016@gmail.com (5941.6ms)
+Date: Tue, 24 May 2016 00:08:16 +1200
+From: Donald Tang <tangyfruits@gmail.com>
+To: tradechat2016@gmail.com
+Message-ID: <5742f2b052f78_14223feab112a7d886775@Donalds-MacBook.local.mail>
+Subject: My Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">My Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Donald Tang</p>
+
+  <p><b>Email:</b>
+  tangyfruits@gmail.com</p>
+
+  <p><b>Message:</b>
+  have i fixd it fam</p>
+
+
+  Rendered contacts/create.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6344ms (Views: 38.2ms | ActiveRecord: 0.0ms)
