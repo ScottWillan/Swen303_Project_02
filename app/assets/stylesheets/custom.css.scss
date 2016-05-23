@@ -95,7 +95,7 @@ img {
 .custom-button-2 {
   color: #ffffff !important;
   font-size: large;
-  background-color: rgba(125, 0, 160, 0.21);
+  background-color: rgba(8, 71, 121, 0.26);
   margin-right: 15px;
   margin-left: -15px;
   padding-left: 15px !important;
@@ -105,7 +105,7 @@ img {
 .custom-button:hover {
   color: #ffffff !important;
   font-size: large;
-  background-color: rgba(0, 0, 144, 0.64) !important;
+  background-color: rgba(30, 0, 144, 0.69) !important;
   margin-right: 15px;
   margin-left: -15px;
   padding-left: 15px !important;
@@ -115,7 +115,7 @@ img {
 .custom-button-2:hover {
   color: #ffffff !important;
   font-size: large;
-  background-color: rgba(125, 0, 160, 0.56) !important;
+  background-color: rgba(0, 36, 160, 0.74) !important;
   margin-right: 15px;
   margin-left: -15px;
   padding-left: 15px !important;
@@ -246,6 +246,7 @@ h1{
   background-image: url("http://www.planwallpaper.com/static/images/ZhGEqAP.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .mainBackground{
@@ -334,12 +335,24 @@ text-align: left;
 }
 
 .transGrey {
-
   height: 100%;
   width: 100%;
   border-radius: 10px;
   padding: 70px;
   padding-top: 40px;
-  background: (rgba(238, 238, 238, 0.84));
+  background: (rgba(238, 238, 238, 0.58));
 }
 
+.margin20 {
+  padding: 20px !important;
+}
+
+.infoPad {
+  padding: 15px;
+  padding-top: 5px;
+  background-color: #fbfbfb;
+}
+
+.white {
+  color: white !important;
+}

@@ -1,4 +1,3 @@
-
 <body class="loginBackground">
 
 <div class="row">
@@ -7,39 +6,38 @@
     <div class="loginBox">
 
 
-
-
       <h2>Log in</h2>
 
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <div class="form-group loginDetails">
-          <%= f.label :email %><br />
-          <%= f.email_field :email, autofocus: true, class: "form-control" %>
+            <%= f.label :email %><br/>
+            <%= f.email_field :email, autofocus: true, class: "form-control", require: true%>
           </div>
 
           <div class="form-group loginDetails">
-          <%= f.label :password %>
-          <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+            <%= f.label :password %>
+            <%= f.password_field :password, autocomplete: "off", class: "form-control", require: true %>
           </div>
 
           <% if devise_mapping.rememberable? -%>
               <div class="form-group">
-              <%= f.check_box :remember_me%>
-              <%= f.label :remember_me %>
+                <%= f.check_box :remember_me %>
+                <%= f.label :remember_me %>
               </div>
-              <% end -%>
+          <% end -%>
 
           <div class="form-group">
-          <%= f.submit "Log in", class:"btn btn-danger" %>
+            <%= f.submit "Log in", class: "btn btn-danger" %>
           </div>
-          <% end %>
+      <% end %>
 
-          <div class="noAccount">
-            Don't have and account? <a href="../users/sign_up" class="loginTosignin">Sign up</a> now!
-          </div>
-
-
-
+      <div class="noAccount">
+        Don't have and account? <a href="../users/sign_up" class="loginTosignin">Sign up</a> now!
+      </div>
+      <br>
+      <div class="forgotPassword">
+        Forgot your password? <a href="../mailer/reset_password_instructions" class="loginTosignin">Resend</a>
+      </div>
 
 
     </div>
