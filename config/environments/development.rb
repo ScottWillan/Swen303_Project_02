@@ -49,6 +49,6 @@ Rails.application.configure do
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: "tradechat2016@gmail.com",
-    password: "SCOTT WILLAN PUT IN THE PASSOWRD HERE LOL"
+    password: "swen3032016"
   }
 end
