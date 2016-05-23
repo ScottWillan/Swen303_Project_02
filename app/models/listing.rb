@@ -9,6 +9,6 @@ class Listing < ActiveRecord::Base
   has_many :sales, class_name: "Order", foreign_key: "seller_id"
   has_many :purchases, class_name: "Order", foreign_key: "buyer_id"
   def self.search(search)
-  where("name LIKE ? OR description LIKE ?", "%#{search}%", "%#{search}%") 
+  where("LOWER(name) LIKE ? OR LOWER(description) LIKE ?", "%#{search.downcase}%", "%#{search.downcase}%") 
 end
 end
