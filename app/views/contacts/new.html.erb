@@ -1,16 +1,105 @@
-<div align="center">
-  <h3>Send A message to Us</h3>
+<body class="loginBackground">
 
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-    <%= f.input :name, :required => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :message, :as => :text, :required => true %>
-    <div class= "hidden">
-      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="contactBox">
+  <!--<div class="row">-->
+    <!--<div class="col-md-12 center padBottom make-banner">-->
+      <!--<h1>Get in touch</h1>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div class="row">-->
+    <!--&lt;!&ndash;Scott's contact profile&ndash;&gt;-->
+    <!--<div class="col-md-6">-->
+      <!--<img class="img-rounded contact-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/300px-No_image_available.svg.png">-->
+    <!--</div>-->
+    <!--<div class="col-md-6 contact bordered">-->
+
+      <!--<h1 class="Georgia">Scott Willan</h1>-->
+
+      <!--<h3>e-mail: willanscot@myvuw.ac.nz</h3>-->
+      <!--<h3>Student id: 300317235</h3>-->
+      <!--<h3>Course: SWEN303</h3>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div class="row">-->
+    <!--&lt;!&ndash;Donald's contact profile&ndash;&gt;-->
+    <!--<div class="divider padBottom"></div>-->
+    <!--<div class="col-md-6">-->
+      <!--<img class="img-rounded contact-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/300px-No_image_available.svg.png">-->
+    <!--</div>-->
+    <!--<div class="col-md-6 contact bordered">-->
+      <!--<h1 class="Georgia">Donald Tang</h1>-->
+      <!--<h3>e-mail: tangdona@myvuw.ac.nz</h3>-->
+      <!--<h3>Student id: 300292291</h3>-->
+      <!--<h3>Course: SWEN303</h3>-->
+    <!--</div>-->
+  <!--</div>-->
+
+  <div align="center">
+
+    <h3 class="Georgia">Send A message to Us</h3>
+    <br>
+    <br>
+
+
+    <%= simple_form_for @contact, :html => {:class => 'form-horizontal'} do |f| %>
+
+
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">Your name</span>
+          <input type="text" class="form-control" placeholder="Jake from state farm" aria-describedby="basic-addon1">
+        </div>
+
+        <br>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">Your email</span>
+          <input type="text" class="form-control" placeholder="example@mail.com" aria-describedby="basic-addon1">
+        </div>
+        <br>
+
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">Message</span>
+          <textarea class="form-control" rows="3" placeholder="What's up?" aria-describedby="basic-addon1" about=""  required></textarea>
+
+        </div>
+
+
+
+        <!--<div class="field">-->
+        <!--<%= f.label :name %>-->
+        <!--<%= f.text_field :name, :required => true, class: "form-control" %>-->
+        <!--</div>-->
+
+
+        <!--<div class="field">-->
+        <!--<%= f.label :email %>-->
+        <!--<%= f.email_field :email, :required => true, class: "form-control" %>-->
+        <!--</div>-->
+
+        <!--<%= f.input :message, :as => :text, :required => true %>-->
+
+        <!--<div class= "hidden">-->
+        <!--<%= f.input :nickname, :hint => 'Leave this field blank!' %>-->
+        <!--</div>-->
+
+        <div>
+          </br>
+          <%= f.button :submit, 'Send message', :class => "btn btn-primary" %>
+        </div>
+
+    <% end %>
+  </div>
+
+
+
     </div>
-    <div>
-      </br>
-      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
-    </div>
-  <% end %>
+  </div>
+  <div class="col-md-3"></div>
 </div>
+
+
+</body>
+
+
